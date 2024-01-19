@@ -1,0 +1,145 @@
+body {
+  height: 400px;
+  width: 350px;
+  background-color: rgb(236, 228, 225);
+}
+.header {
+  display: flex;
+  justify-content: center;
+  height: 45px;
+}
+
+#tasks #task-input {
+  width: 100%;
+  padding: 10px 15px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid black;
+  border-radius: 4px;
+  font-family: Arial, sans-serif;
+  font-weight: bold; /* Add this line to make the font bold */
+  white-space: nowrap; /* Add this line to prevent wrapping */
+}
+#tasks #delete-btn {
+  background-color: rgb(211, 142, 14);
+  color: white;
+  border: none;
+  padding: 4px 6px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 2px 1px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: buttonAnimation 2s infinite;
+}
+#tasks #delete-btn:hover {
+  background-color: darkorange;
+  zoom: 110%;
+}
+
+#tasks #task-input:focus {
+  outline: rgb(250, 0, 0);
+  border: 2px solid rgb(0, 189, 158);
+  background-color: white; /* Add this line to change the background color */
+  animation: borderAnimation 2s infinite;
+  zoom: 105%;
+}
+
+@keyframes borderAnimation {
+  0% {
+    border-color: darkblue;
+  }
+  50% {
+    border-color: rgb(250, 0, 0);
+  }
+  100% {
+    border-color: darkblue;
+  }
+}
+
+#add {
+  background-color: blue;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: buttonAnimation 2s infinite;
+}
+
+#add:hover {
+  background-color: darkblue;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#start {
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: buttonAnimation 2s infinite;
+}
+
+#start {
+  background-color: red;
+  color: white;
+  border-radius: 10px;
+}
+
+#start:hover {
+  background-color: darkred;
+}
+
+@keyframes buttonAnimation {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#reset {
+  background-color: green;
+  border-radius: 10px;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 13px;
+  margin: 4px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  animation: buttonAnimation 2s infinite;
+}
+#reset:hover {
+  background-color: darkgreen;
+}

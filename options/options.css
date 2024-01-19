@@ -1,0 +1,81 @@
+#save {
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 2px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 10px;
+  animation: fade-in 0.7s ease-in-out;
+}
+
+h1 {
+  font-size: 2em;
+  color: darkblue;
+  text-align: center;
+  padding: 20px 0;
+  animation: fade-in 0.7s ease-in-out;
+  font-weight: bold; /* Added bold font weight */
+}
+
+label {
+  font-size: 1.2em;
+  color: black;
+  display: block;
+  margin-bottom: 10px;
+  animation: fade-in 0.7s ease-in-out;
+  font-weight: bold; /* Added bold font weight */
+}
+
+/* Innovative feature: Gradient background */
+body {
+  background: repeating-linear-gradient(
+    to right,
+    rgb(146, 196, 236),
+    rgb(255, 255, 255) 100%
+  );
+  padding: 30px;
+  animation: fade-in 4s ease-in-out;
+}
+
+#save:hover {
+  background-color: darkblue;
+  transform: scale(1.05);
+}
+
+input[type="text"] {
+  font-weight: bold;
+  animation: fade-in 0.7s ease-in-out;
+}
+
+#time-option {
+  width: 50%;
+  padding: 10px;
+  margin: 10px 0;
+  box-sizing: border-box;
+  border: 2px solid gray;
+  border-radius: 4px;
+  /* Custom border color */
+  border-style: groove; /* Custom border type */
+  animation: fade-in 0.7s ease-in-out;
+}
+
+input[type="text"]:focus {
+  outline: none;
+  border-color: red; /* Custom input focus box shadow */
+  animation: fade-in 0.7s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "Pomodoro Timer",
+  "version": "1.0.0",
+  "description": "A simple Pomodoro Timer extension for productivity.",
+  "icons": {
+    "16": "clock.png",
+
+    "48": "clock.png",
+    "128": "clock.png"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_title": "Pomodoro Timer",
+    "default_icon": {
+      "16": "clock.png",
+      "128": "clock.png"
+    }
+  },
+  "permissions": ["storage", "alarms", "notifications"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options/options.html"
+}
